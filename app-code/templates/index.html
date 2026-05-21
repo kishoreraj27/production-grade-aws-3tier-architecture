@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS 3-Tier Architecture</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Production-Grade AWS 3-Tier Architecture</h1>
+
+            <p>
+                Secure • Scalable • Highly Available Cloud Infrastructure
+            </p>
+
+            <div class="status">
+                ✅ Successfully Deployed on AWS
+            </div>
+
+            <a href="#architecture" class="btn">
+                Explore Architecture
+            </a>
+
+        </div>
+
+    </div>
+
+    <section id="architecture" class="architecture-section">
+
+        <h2>Architecture Flow</h2>
+
+        <div class="architecture-container">
+
+            <div class="arch-card">
+                <div class="icon">🌍</div>
+                <h3>Internet</h3>
+                <p>User Traffic Entry Point</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="arch-card">
+                <div class="icon">⚖</div>
+                <h3>Public ALB</h3>
+                <p>Traffic Distribution Layer</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="arch-card">
+                <div class="icon">🖥</div>
+                <h3>Private EC2</h3>
+                <p>Flask Backend Application</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="arch-card">
+                <div class="icon">🗄</div>
+                <h3>RDS MySQL</h3>
+                <p>Secure Private Database</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services-section">
+
+        <h2>AWS Services Used</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>VPC</h3>
+                <p>Private isolated AWS network architecture.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Subnets</h3>
+                <p>Public & private subnet segmentation.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>NAT Gateway</h3>
+                <p>Outbound internet for private instances.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Bastion Host</h3>
+                <p>Secure SSH access to private infrastructure.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>ALB</h3>
+                <p>Application traffic distribution layer.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>RDS</h3>
+                <p>Managed MySQL relational database.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Security Groups</h3>
+                <p>Stateful firewall protection.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Auto Scaling</h3>
+                <p>High availability & self-healing architecture.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="stats-section">
+
+        <div class="stat-box">
+            <h2>99.99%</h2>
+            <p>Availability Goal</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>3-Tier</h2>
+            <p>Architecture Pattern</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>Private</h2>
+            <p>Backend Infrastructure</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>AWS</h2>
+            <p>Cloud Platform</p>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Built by Kishore Raj • AWS Cloud & DevOps Project
+        </p>
+
+    </footer>
+
+</body>
+</html>
